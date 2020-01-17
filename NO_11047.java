@@ -25,5 +25,4 @@ public class NO_11047 {
 		System.out.println(cnt);
 
 	}
-
 }
