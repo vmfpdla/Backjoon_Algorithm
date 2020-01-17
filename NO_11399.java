@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package Backjoon_Algorithm;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -6,13 +5,13 @@ import java.util.Scanner;
 public class NO_11399 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); // sc ¶ó´Â ÀÎ½ºÅÏ½º »ý¼º
 		int n;
 		int sum=0;
 		n=sc.nextInt();
-		int[] num = new int[n];
+		int[] num = new int[n]; // ¹è¿­ÀÇ »ý¼º°ú ¼±¾ðÀ» µ¿½Ã¿¡ . C¾ð¾î¿Í ´Ù¸£°Ô º¯¼ö NÀ» ÀÌ¿ëÇÏ¿© ¹Ù·Î ¹è¿­ÀÇ Å©±â ÁöÁ¤ÀÌ °¡´É
 		for(int i=0;i<n;i++) num[i] =sc.nextInt();
-		Arrays.sort(num);
+		Arrays.sort(num); //Arrays.sort(¹è¿­ÀÌ¸§) ÇÏ¸é ÀÚµ¿À¸·Î ¿À¸§Â÷¼ø Á¤·Ä
 		for(int i=0;i<n;i++){
 			for(int j=0;j<=i;j++) sum=sum+num[j]; 
 		}
@@ -20,30 +19,3 @@ public class NO_11399 {
 	}
 
 }
-
-
-=======
-package Backjoon_Algorithm;
-import java.util.Arrays;
-import java.util.Scanner;
-
-public class NO_11399 {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in); // sc ë¼ëŠ” ì¸ìŠ¤í„´ìŠ¤ ìƒì„±
-		int n;
-		int sum=0;
-		n=sc.nextInt();
-		int[] num = new int[n]; // ë°°ì—´ì˜ ìƒì„±ê³¼ ì„ ì–¸ì„ ë™ì‹œì— . Cì–¸ì–´ì™€ ë‹¤ë¥´ê²Œ ë³€ìˆ˜ Nì„ ì´ìš©í•˜ì—¬ ë°”ë¡œ ë°°ì—´ì˜ í¬ê¸° ì§€ì •ì´ ê°€ëŠ¥
-		for(int i=0;i<n;i++) num[i] =sc.nextInt();
-		Arrays.sort(num); //Arrays.sort(ë°°ì—´ì´ë¦„) í•˜ë©´ ìžë™ìœ¼ë¡œ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
-		for(int i=0;i<n;i++){
-			for(int j=0;j<=i;j++) sum=sum+num[j]; 
-		}
-		System.out.println(sum);
-	}
-
-}
-
-
->>>>>>> 7b28ef65b15d5a4058b9e0e6cb5238ace6092126
