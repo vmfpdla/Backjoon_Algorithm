@@ -22,10 +22,10 @@ public class NO_1931 {
 		Arrays.sort(K, new Comparator<int[]>() { // 끝나는 시간 순으로 오름차순 한 후 , 끝나는 시간이 같으면 시작하는 시간 순으로 오름차순 !
             @Override
             public int compare(int[] arg0, int[] arg1) {
-                if(arg0[1] == arg1[1]) {
-                    return arg0[0] - arg1[0];
-                } else {
-                    return arg0[1] - arg1[1];
+                if(arg0[1] == arg1[1]) { //끝나는 시간이 같은경우
+                    return arg0[0] - arg1[0]; //시작하는 시간 순으로 오름차순 정렬
+                } else { // 끝나는 시간이 다른 경우 
+                    return arg0[1] - arg1[1];// 끝나는 시간 순으로 오름차순 정렬
                 }
             }
         });    
